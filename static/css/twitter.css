@@ -676,3 +676,54 @@ a{
         margin-top: 1vmin;
 
 }
+/* Flash Dialog */
+#flashDialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    min-width: 280px;
+    max-width: 400px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#flashDialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.flash-dialog-inner {
+    position: relative;
+    padding: 24px 20px 20px;
+}
+
+.flash-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.flash-close-btn:hover {
+    color: #000;
+}
+
+/* Category colours */
+.flash-success { color: #1a7a3c; }
+.flash-error   { color: #b00020; }
+.flash-warning { color: #8a5d00; }
+.flash-info    { color: #005f99; }
+
+.flash-dialog-inner strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.flash-dialog-inner p {
+    margin: 0;
+    font-size: 0.9rem;
+}
