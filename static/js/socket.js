@@ -61,7 +61,10 @@ socket.on('spin_animation', function(data) {
         let widthpercentage = (data.timer / 10) * 100;
         timer.style.width = widthpercentage + "%";
         if(widthpercentage == 100){
-            bets.style.visibility = "visible";
+        }
+        if(widthpercentage == 90 && mode == "down"){
+                        bets.style.visibility = "visible";
+
         }
 
         if (widthpercentage === 70) {
